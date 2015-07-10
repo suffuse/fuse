@@ -3,8 +3,8 @@ package fstestutil
 import (
 	"os"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs"
+	"github.com/suffuse/fuse"
+	"github.com/suffuse/fuse/fs"
 	"golang.org/x/net/context"
 )
 

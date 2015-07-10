@@ -26,11 +26,11 @@ language: go
 sudo: required
 
 install:
-  # This line makes it possible for forks of github.com/bazil/fuse to run
-  # the tests on travis. Otherwise due to go's name resolution rules, nothing works.
-  # See https://github.com/golang/go/wiki/PackageManagementTools for a bunch of
-  # other attempts to deal with it.
-  - bin/fix-imports.sh bazil.org/fuse "github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BUILD_DIR"
+  # This line makes it possible for forks to run the tests on travis.
+  # Otherwise due to go's name resolution rules, nothing works. See
+  #   https://github.com/golang/go/wiki/PackageManagementTools
+  # for a bunch of other attempts to deal with it.
+  - bin/fix-imports.sh github.com/suffuse/fuse "github.com/$TRAVIS_REPO_SLUG" "$TRAVIS_BUILD_DIR"
   - go get -t -v ./...
   # Installing FUSE in the travis container. It won't work directly, but
   # we will exploit the files from the UML container.
