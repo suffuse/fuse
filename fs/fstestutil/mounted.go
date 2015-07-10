@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs"
+	"github.com/suffuse/fuse"
+	"github.com/suffuse/fuse/fs"
 )
 
 // Mount contains information about the mount for the test to use.

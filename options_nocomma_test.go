@@ -9,8 +9,8 @@ import (
 	"runtime"
 	"testing"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs/fstestutil"
+	"github.com/suffuse/fuse"
+	"github.com/suffuse/fuse/fs/fstestutil"
 )
 
 func TestMountOptionCommaError(t *testing.T) {

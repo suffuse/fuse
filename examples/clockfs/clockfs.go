@@ -11,10 +11,10 @@ import (
 	"syscall"
 	"time"
 
-	"bazil.org/fuse"
-	"bazil.org/fuse/fs"
-	_ "bazil.org/fuse/fs/fstestutil"
-	"bazil.org/fuse/fuseutil"
+	"github.com/suffuse/fuse"
+	"github.com/suffuse/fuse/fs"
+	_ "github.com/suffuse/fuse/fs/fstestutil"
+	"github.com/suffuse/fuse/fuseutil"
 	"golang.org/x/net/context"
 )
 
